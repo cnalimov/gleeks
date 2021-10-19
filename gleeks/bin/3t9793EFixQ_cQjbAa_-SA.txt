@@ -1,0 +1,1 @@
+{"name":"my git diagram","configuration":{"orientation":{"type":"topdown"},"layoutEngine":{"isEnabled":true,"type":"blocks"},"connectionLines":{"type":"curved"},"standartizeWidth":false,"doctype":{"isEnabled":true,"type":"flowchart"}},"timeStamp":"2021-10-19T15:30:22.508Z"}
