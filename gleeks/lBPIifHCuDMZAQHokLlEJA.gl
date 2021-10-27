@@ -1,0 +1,24 @@
+KeyVault:db
+	connectionString
+	masterKey
+
+ReportingApi
+	1. receive masterKey from keyVault
+	2. receive encrypted clientKey from clientManagementApi
+	2. Decrypt clientKey
+	3. Decrypt sensitive data with clientKey
+
+ReportingApi <-masterkey- KeyVault
+
+ReportingApi <-clientKey_encryptedWithMaster- ClientManagementApi
+
+ReportingApi --> ReportingDb:db
+
+/g 
+	ClientManagementApi
+	ClientManagementDb:db
+		clientId
+		clientKey_encryptedWithMaster
+
+
+ClientManagementApi -- ClientManagementDb
